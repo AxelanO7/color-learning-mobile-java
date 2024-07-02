@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#04D4F0"
+    tools:context=".DetailColorActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/circle_detail_1"
+            android:layout_width="720sp"
+            android:layout_height="720sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/light_grey_full_rounded"
+            android:translationX="60sp"
+            android:translationY="-600sp" />
+
+        <View
+            android:id="@+id/circle_detail_2"
+            android:layout_width="640sp"
+            android:layout_height="640sp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/cyan_full_rounded"
+            android:translationX="-160sp"
+            android:translationY="400sp" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="24sp"
+            android:paddingTop="24sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/button_back_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_12_rounded"
+                    android:fontFamily="@font/nerko_one"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="20sp"
+                    android:text="@string/less_then"
+                    android:textColor="@color/white"
+                    android:textFontWeight="400"
+                    android:textSize="40sp"
+                    app:backgroundTint="@null" />
+
+                <TextView
+                    android:id="@+id/tvDetail1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40sp"
+                    android:fontFamily="@font/kavoon"
+                    android:gravity="center_horizontal"
+                    android:text="@string/title_detail"
+                    android:textColor="@color/black"
+                    android:textFontWeight="400"
+                    android:textSize="36sp" />
+
+                <View
+                    android:id="@+id/color_container_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@color/c_yellow_pick" />
+
+                <TextView
+                    android:id="@+id/tvDetail2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nerko_one"
+                    android:gravity="center_horizontal"
+                    android:text="Kuning"
+                    android:textColor="@color/black"
+                    android:textFontWeight="400"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="20sp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDetail3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32sp"
+                        android:fontFamily="@font/poppins"
+                        android:text="@string/short_desc_detail"
+                        android:textColor="@color/black"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvDetail4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="28sp"
+                        android:fontFamily="@font/poppins"
+                        android:text="@string/desc_detail_color"
+                        android:textColor="@color/black"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

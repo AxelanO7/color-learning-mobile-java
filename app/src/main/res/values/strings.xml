@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Belajar Warna</string>
+    <string name="titile_main_1">Belajar Warna</string>
+    <string name="start">Mulai</string>
+    <string name="title_pick_color_1">Macam-macam Warna</string>
+    <string name="less_then">&lt;</string>
+    <string name="title_detail">Ini Adalah Warna</string>
+    <string name="desc_detail_color">Kuning adalah warna yang terang dan cerah, sering dikaitkan dengan keceriaan, kegembiraan, dan kebahagiaan. Warna kuning juga dapat melambangkan kecerdasan, kreativitas, dan optimisme. Secara alami, kuning sering dikaitkan dengan matahari dan musim panas.</string>
+    <string name="short_desc_detail">kuning : Lemon, Bunga Matahari, Pisang</string>
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pick"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#04D4F0"
+    tools:context=".PickColorActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/circle_pick_1"
+            android:layout_width="720sp"
+            android:layout_height="720sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/light_grey_full_rounded"
+            android:translationX="60sp"
+            android:translationY="-600sp" />
+
+        <View
+            android:id="@+id/circle_pick_2"
+            android:layout_width="640sp"
+            android:layout_height="640sp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/cyan_full_rounded"
+            android:translationX="-160sp"
+            android:translationY="400sp" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="24sp"
+            android:paddingTop="24sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/buttonPickBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_12_rounded"
+                    android:fontFamily="@font/nerko_one"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="20sp"
+                    android:text="@string/less_then"
+                    android:textColor="@color/white"
+                    android:textFontWeight="400"
+                    android:textSize="40sp"
+                    app:backgroundTint="@null" />
+
+                <TextView
+                    android:id="@+id/tvPick1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40sp"
+                    android:fontFamily="@font/kavoon"
+                    android:gravity="center_horizontal"
+                    android:text="@string/title_pick_color_1"
+                    android:textColor="@color/black"
+                    android:textFontWeight="400"
+                    android:textSize="36sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40sp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="24sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:id="@+id/redContainer"
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:background="@color/c_red_pick" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1" />
+
+                        <View
+                            android:id="@+id/blueContainer"
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:background="@color/c_blue_pick" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="48sp"
+
+                        android:orientation="horizontal">
+
+                        <View
+                            android:id="@+id/greenContainer"
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:background="@color/c_green_pick" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1" />
+
+                        <View
+                            android:id="@+id/cyanContainer"
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:background="@color/c_cyan_pick" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="48sp"
+
+                        android:orientation="horizontal">
+
+                        <View
+                            android:id="@+id/purpleContainer"
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:background="@color/c_purple_pick" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1" />
+
+                        <View
+                            android:id="@+id/yellowContainer"
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:background="@color/c_yellow_pick" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
